@@ -1,35 +1,88 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #000; /* fundo preto */
+    color: white; 
     text-align: center;
-    background: linear-gradient(to right, #111, #333);
-    color: white;
 }
 
 header {
     padding: 100px 20px;
+    background-color: #000;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid gold;
 }
 
 h1 {
     font-size: 50px;
+    color: gold;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
 }
 
-.botao {
+.botao-whatsapp {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: gold;
-    color: black;
+    background-color: #25D366;
+    color: white;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
 }
 
 section {
     padding: 50px 20px;
-    background-color: #222;
+    background-color: #333; /* cinza escuro */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Títulos e textos de Sobre e Serviços dourados */
+section h2,
+section p {
+    color: gold;
+}
+
+.servicos .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.3s;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #666;
+}
+
+footer {
+    padding: 20px;
+    background-color: #111;
+    font-size: 14px;
+    color: white;
 }
